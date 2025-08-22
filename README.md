@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">🛒 Productify</h1>
 
-## Getting Started
+<p align="center">
+  A modern <b>product adding and management website</b> built with <b>Next.js</b>, MongoDB, and NextAuth.  
+  Productify allows users to seamlessly add, manage, and display products with authentication support, smooth animations, and an interactive UI.
+</p>
 
-First, run the development server:
+<hr/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>🚀 Live Demo</h2>
+<p><a href="https://productify.vercel.app" target="_blank">Live Site on Vercel</a></p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>📂 Repository</h2>
+<p><a href="https://github.com/riyad899/Productify.git">GitHub Repository</a></p>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<hr/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h2>✨ Features</h2>
+<ul>
+  <li>🔐 <b>User Authentication</b> with NextAuth (Google & credentials login).</li>
+  <li>📦 <b>Add, Manage, and Display Products</b> with MongoDB & Mongoose.</li>
+  <li>🎨 <b>Modern UI/UX</b> with Framer Motion animations.</li>
+  <li>🔔 <b>Toast Notifications</b> for success/error handling.</li>
+  <li>📱 <b>Responsive Design</b> for mobile, tablet, and desktop.</li>
+  <li>🖼 <b>Image Slider</b> using Swiper for product showcase.</li>
+</ul>
 
-## Learn More
+<hr/>
 
-To learn more about Next.js, take a look at the following resources:
+<h2>🛠 Tech Stack & Dependencies</h2>
+<ul>
+  <li><b>Framework:</b> <a href="https://nextjs.org/">Next.js 15</a></li>
+  <li><b>Frontend:</b> React 19, Framer Motion, Swiper, Lucide React Icons</li>
+  <li><b>Backend/Database:</b> MongoDB + Mongoose</li>
+  <li><b>Authentication:</b> NextAuth</li>
+  <li><b>Styling/UX:</b> React Toastify</li>
+</ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<pre>
+<code>{
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.540.0",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.2",
+    "next": "15.5.0",
+    "next-auth": "^4.24.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-toastify": "^11.0.5",
+    "swiper": "^11.2.10"
+  }
+}
+</code>
+</pre>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<hr/>
 
-## Deploy on Vercel
+<h2>⚙️ Setup & Installation</h2>
+<ol>
+  <li><b>Clone the repository</b>
+    <pre><code>git clone https://github.com/riyad899/Productify.git
+cd Productify</code></pre>
+  </li>
+  <li><b>Install dependencies</b>
+    <pre><code>npm install</code></pre>
+  </li>
+  <li><b>Set up environment variables</b>
+    <pre><code>
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_secret_key
+NEXTAUTH_URL=http://localhost:3000
+    </code></pre>
+  </li>
+  <li><b>Run the development server</b>
+    <pre><code>npm run dev</code></pre>
+    <p>App will run at <a href="http://localhost:3000">http://localhost:3000</a></p>
+  </li>
+  <li><b>Build for production</b>
+    <pre><code>npm run build
+npm start</code></pre>
+  </li>
+</ol>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<hr/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>🗂 Route Summary</h2>
+<table>
+  <tr><th>Route</th><th>Description</th></tr>
+  <tr><td><code>/</code></td><td>Landing page with product highlights and navigation</td></tr>
+  <tr><td><code>/login</code></td><td>Login page (Google & credentials authentication via NextAuth)</td></tr>
+  <tr><td><code>/products</code></td><td>Product list page (publicly accessible)</td></tr>
+  <tr><td><code>/add-product</code></td><td>Add a new product (authenticated users only)</td></tr>
+  <tr><td><code>/api/*</code></td><td>API routes for authentication & product CRUD operations</td></tr>
+</table>
+
+<hr/>
+
+<h2>📌 Submission Requirements</h2>
+<ul>
+  <li>✅ GitHub Repository: <a href="https://github.com/riyad899/Productify.git">Productify Repo</a></li>
+  <li>✅ Live Site Link: <i>(Add your deployed Vercel link here)</i></li>
+  <li>✅ README.md: Included</li>
+</ul>
